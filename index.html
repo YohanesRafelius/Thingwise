@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thingwise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("NtIcz1vqzkrgchdP4"); 
+  })();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+
+<body>
+
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="zLaKDHz6x7V_6UH07m1iO";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+
+    <!-- HEADER -->
+<header>
+    <div class="logo">
+        <i class="fa-solid fa-boxes-packing"></i>
+        <span class="logo-text">Thingwise</span>
+    </div>
+
+    <nav class="nav-links">
+        <a href="#search-section">Search</a>
+        <a href="#section-3">News</a>
+        <a href="#catalogue-section-2">Catalogue List</a>
+        <a href="#recycle-now">Recycle Now</a>
+        <a href="#recycle-game-section">Mini Games</a>
+        <a href="#contact-us">Contact Us</a>
+    </nav>
+</header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <img src="thingwise.png" alt="Thingwise Image">
+        <button class="explore-btn" onclick="location.href='#search-section'">
+    Explore More
+</button>
+    </section>
+
+<!--SECTION 2 -->
+<section class="search-section" id="search-section">
+    <h2 class="section-title">
+        What the thing that you want to know the Journey?
+    </h2>
+    <p class="section-subtitle">
+        Explore the journey of your favorite things and learn how to make them sustainable!
+    </p>
+
+    <div class="search-bar-wrapper">
+        <input type="text" id="mainSearchInput" placeholder="Search here...">
+        
+        <div class="filter-container">
+            <i class="fa-solid fa-align-justify filter-icon"></i>
+            <select id="sustainabilityFilter">
+                <option value="" disabled selected>Filter</option>
+                <option value="all">All Levels</option>
+                <option value="high">High Sustainability</option>
+                <option value="moderate">Moderate Sustainability</option>
+                <option value="low">Low Sustainability</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="popular-tags">
+        <button onclick="document.querySelector('#section-3').scrollIntoView({behavior:'smooth'})">News</button>
+        <button onclick="document.querySelector('#catalogue-section-2').scrollIntoView({behavior:'smooth'})">Catalogue</button>
+        <button onclick="document.querySelector('#recycle-now').scrollIntoView({behavior:'smooth'})">Recycle Tips</button>
+    </div>
+
+    <div id="filterResultContainer" class="search-results-overlay">
+        <div class="results-header">
+            <span>Results</span>
+            <i class="fa-solid fa-xmark close-results" onclick="closeResults()"></i>
+        </div>
+        <div id="resultsList" class="results-list">
+            </div>
+    </div>
+
+    <div class="section-images">
+        <img src="image1.png" alt="Image 1" class="img-large">
+        <img src="image2.png" alt="Image 2" class="img-small">
+    </div>
+</section>
+
+<!---------------SECTION 3------------------------>
+<!-- ===== SECTION 3: NEWS / MEDIA LAYOUT ===== -->
+<section class="section-3" id="section-3">
+  <div class="section-title">
+    <h2>Recent News and Our Goal</h2>
+  </div>
+
+  <div class="container-3">
+
+    <!-- LEFT: Slider News -->
+    <div class="left-box">
+      <div class="slider-header">
+        <h3>News Feed</h3>
+        <div class="slider-controls">
+          <button id="prevBtn" class="slider-arrow"><i class="fa-solid fa-angle-left"></i></button>
+          <button id="nextBtn" class="slider-arrow"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+      </div>
+
+      <div class="slider-frame">
+        <div class="slider-track" id="sliderTrack">
+          <!-- Slide 1 -->
+          <div class="slide">
+            <div class="slide-scroll">
+              <img src="news/news1.png" alt="news1" class="news-img">
+              <h4 class="news-title">Fast fashion fuelling global waste crisis</h4>
+              <p class="news-content">Secretary-General António Guterres urged swift action to address the fashion industry’s massive environmental impact, noting that it generates up to eight percent of global greenhouse gas emissions, consumes 215 trillion litres of water each year, and relies on harmful chemicals, all while producing and discarding clothing at unprecedented rates. He warned that this waste crisis reflects a larger global problem, as over two billion tonnes of waste are generated annually—much of it dumped in the Global South, overwhelming local infrastructure. With fashion as this year’s Zero Waste Day focus, Guterres highlighted both the urgent need for change and the opportunities ahead, from recycled materials and rising consumer demand for sustainability to the growth of resale markets, urging everyone to take part in reducing waste and promoting a more sustainable future. </p>
+                 <a href="https://news.un.org/en/story/2025/03/1161636" target="_blank" class="read-more-btn">Read More</a>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="slide">
+            <div class="slide-scroll">
+              <img src="news/news2.png" alt="news2" class="news-img">
+              <h4 class="news-title">Too much stuff: can we solve our addiction to consumerism?</h4>
+              <p class="news-content">Overconsumption has created enormous mountains of waste and caused serious environmental damage across the globe, from plastic pollution in oceans to overflowing landfills and the environmental costs of fast fashion and disposable products. While individual efforts, like reducing purchases or practicing minimalism, can encourage mindfulness and lessen personal impact, they are far too small to address the magnitude of the crisis. Meaningful change requires large-scale action: governments and industries must implement circular economy practices, reduce the use of harmful materials, design innovative and reusable packaging, enforce repair and longevity laws, and regulate overproduction. Only by transforming the systems behind mass consumption can we hope to significantly reduce environmental harm and build a more sustainable future for people and the planet.</p>
+             <a href="https://www.theguardian.com/environment/2023/nov/28/too-much-stuff-can-we-solve-our-addiction-to-consumerism" target="_blank" class="read-more-btn">Read More</a>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="slide">
+            <div class="slide-scroll">
+              <img src="news/news3.png" alt="news3" class="news-img">
+              <h4 class="news-title">How Buying Stuff Drives Climate Change</h4>
+              <p class="news-content">Americans generate massive amounts of waste during the holiday season, from wrapping paper and ribbons to food, contributing significantly to climate change due to the greenhouse gas emissions from producing the goods they buy. Wealthy consumers, especially in countries like the U.S., have a disproportionately large carbon footprint, and as more people worldwide become affluent, the problem worsens. Products are often designed to be replaced quickly, fueling overconsumption and unnecessary emissions, while advertising manipulates emotions to keep people buying. Experts suggest that reducing consumption, choosing durable or second-hand items, and supporting policies for repairable goods can help mitigate the impact. Even small individual changes, like giving sustainable gifts or reusing materials, can add up to cultural shifts that influence broader environmental outcomes.
+</p>
+             <a href="https://news.climate.columbia.edu/2020/12/16/buying-stuff-drives-climate-change/" target="_blank" class="read-more-btn">Read More</a>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="slide">
+            <div class="slide-scroll">
+              <img src="news/news4.png" alt="news4" class="news-img">
+              <h4 class="news-title">Reducing Overconsumption in the Age of Consumerism</h4>
+              <p class="news-content">People are buying more than ever, causing overconsumption that depletes natural resources, generates massive waste, and damages the environment through pollution, biodiversity loss, and water scarcity. In places like Nova Scotia, the average person now produces 400 kg of waste per year, and landfills contribute significantly to greenhouse gas emissions. Overconsumption is driven by psychological factors such as insecurity, the desire for social status, and the overwhelming abundance of choices, while social media and targeted marketing amplify the urge to buy, often creating “artificial needs.” To counteract this, individuals can make mindful purchasing decisions, prioritize experiences over material goods, repair and reuse items, buy second-hand, and practice gratitude. By collectively valuing sustainability over materialism, society can reduce waste, lessen environmental impact, and promote a more balanced, eco-friendly lifestyle.</p>
+             <a href="https://divertns.ca/learn/waste-not-news/reducing-overconsumption-age-consumerism" target="_blank" class="read-more-btn">Read More</a>
+            </div>
+          </div>
+          <!-- Slide 5 -->
+          <div class="slide">
+            <div class="slide-scroll">
+              <img src="news/news5.png" alt="news5" class="news-img">
+              <h4 class="news-title">Overproduction in the Fashion Industry: An In-depth Analysis</h4>
+              <p class="news-content">The fashion industry produces far more clothes than people actually need, driven by fast fashion and mass production cycles, resulting in enormous waste and environmental damage. Each year, about 100 billion garments are made globally, but up to 30 billion remain unsold, with much ending up in landfills, incineration, or exported as secondhand clothing. Overproduction is fueled by rapid trend turnover, inaccurate forecasts, a “better to overproduce” mentality, low production costs, and incentives that reward volume. The environmental impacts are severe, including carbon emissions, water use and pollution, microplastic contamination, and long-lasting landfill waste. To address this, fashion brands can adopt technology-driven solutions such as AI-powered demand forecasting, real-time inventory management, digital sampling, virtual try-ons, and blockchain supply transparency. By implementing these measures, brands can reduce overproduction, cut waste, and move toward more sustainable and ethical practices while maintaining profitability.</p>
+             <a href="https://nul.global/blog/overproduction-in-the-fashion-industry" target="_blank" class="read-more-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MIDDLE: photo grid + youtube -->
+<div class="middle-box">
+  <div class="photo-row">
+    <div class="photo-item">
+      <img src="pict1.png" alt="SDG 12">
+      <div class="photo-overlay">
+        <div class="overlay-inner"> <h3>SDG 12</h3>
+          <strong>Responsible Consumption & Production</strong>
+          <p>Empowering users to make wiser choices by identifying <b>Low, Moderate, and High</b> impact products.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="photo-item">
+      <img src="pict2.png" alt="SDG 13">
+      <div class="photo-overlay">
+        <div class="overlay-inner">
+          <h3>SDG 13</h3>
+          <strong>Climate Action</strong>
+          <p>By choosing eco-friendly alternatives, also recycling products, our users take a direct stand in reducing carbon footprints.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-row"> 
+    <div class="youtube-wrapper"> 
+      <video class="video-frame" autoplay muted loop playsinline> 
+        <source src="youtube.mp4" type="video/mp4"> 
+      </video> 
+    </div> 
+  </div> 
+</div>
+
+    <!-- RIGHT: reels 9:16 portrait stacked -->
+    <div class="right-box">
+      <div class="reel-item">
+        <video src="video1.mp4" autoplay muted loop playsinline></video>
+      </div>
+      <div class="reel-item">
+        <video src="video2.mp4" autoplay muted loop playsinline></video>
+      </div>
+    </div>
+
+  </div> <!-- container-3 -->
+</section>
+
+
+<!-----------------------SECTION 4--------------------------------------->
+<!-- ===== SECTION: Catalogue List 2 ===== -->
+<section id="catalogue-section-2" class="catalogue-section">
+  <div class="catalogue-container">
+    <h2 class="catalogue-title">Catalogue List</h2>
+    <p class="catalogue-sub">Explore items — Click image or name to view details!</p>
+
+    <div class="catalogue-grid" id="catalogueGrid2" aria-live="polite">
+      <!-- Cards akan di-generate oleh JS -->
+    </div>
+
+    <div class="catalogue-actions">
+  <button id="minimizeBtn2" class="btn-expand" style="display:none; margin-right:10px;">Minimize</button>
+  <button id="expandBtn2" class="btn-expand">Expand more</button>
+</div>
+
+
+  <!-- Modal detail product -->
+  <div id="catalogueModal2" class="catalogue-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="catalogue-modal-overlay" id="modalOverlay2"></div>
+    <div class="catalogue-modal-panel" role="document">
+      <button class="modal-close" id="modalClose2" aria-label="Close popup">&times;</button>
+      <div class="modal-body">
+        <div class="modal-image">
+          <img src="catalogue/catalogue1.png" alt="Product image" id="modalImg2">
+        </div>
+        <div class="modal-info">
+          <h3 id="modalName2">Product Name</h3>
+          <ul class="product-meta">
+            <li><strong>Raw material:</strong> <span id="modalRaw2">-</span></li>
+            <li><strong>Production process:</strong> <span id="modalProcess2">-</span></li>
+            <li><strong>Average time usage:</strong> <span id="modalTime2">-</span></li>
+            <li><strong>Waste stage:</strong> <span id="modalWaste2">-</span></li>
+            <li><strong>Sustainability:</strong> <span id="modalSustain2" class="sustain-badge">-</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-----------------------SECTION 5--------------------------------------->
+
+<section id="recycle-now" class="recycle-section">
+  <h2 class="recycle-title">Recycle Now</h2>
+
+  <!-- Search Bar -->
+  <div class="recycle-search">
+    <input type="text" id="tutorialSearchInput" placeholder="Search recycle tutorial by material...">
+    <button id="tutorialSearchBtn">Search</button>
+  </div>
+
+  <!-- Tutorial Slider -->
+  <div class="tutorial-slider">
+    <button class="arrow-btn left" id="prevTutorial">&lt;</button>
+
+    <div class="tutorial-display">
+      <video id="tutorialVideo" controls>
+        <source src="tutorial1.mp4" type="video/mp4">
+      </video>
+
+      <h3 id="tutorialTitle">Tutorial 1</h3>
+
+      <div class="tutorial-info">
+        <h4>Materials</h4>
+        <ul id="tutorialMaterials"></ul>
+
+        <h4>Method</h4>
+        <p id="tutorialMethod"></p>
+      </div>
+
+      <!-- Like & Comment -->
+      <div class="interaction-section">
+        <button id="likeBtn">👍 Like (<span id="likeCount">0</span>)</button>
+
+        <div class="comment-box">
+          <h4>Comments</h4>
+          <textarea id="commentInput" placeholder="Write a comment..."></textarea>
+          <button id="addCommentBtn">Post</button>
+
+          <ul id="commentList"></ul>
+        </div>
+      </div>
+    </div>
+
+    <button class="arrow-btn right" id="nextTutorial">&gt;</button>
+  </div>
+
+  <!-- Upload Tutorial -->
+  <div class="upload-section">
+    <h3>Upload Your Tutorial</h3>
+
+    <input type="file" id="uploadMedia" accept="video/*,image/*">
+
+    <input type="text" id="uploadTitle" placeholder="Tutorial title">
+
+    <textarea id="uploadMaterials" placeholder="Materials (separated by commas)"></textarea>
+
+    <textarea id="uploadMethod" placeholder="Method / Steps"></textarea>
+
+    <button id="uploadTutorialBtn">Upload Tutorial</button>
+  </div>
+</section>
+
+
+<!-----------------------SECTION 5--------------------------------------->
+
+<section id="recycle-game-section">
+  <h2>Recycle Factory Game</h2>
+  <p class="game-description">Put the things inside the baskets depending on their material to help us recycle!</p>
+  <div id="recycle-game">
+    <div id="conveyor"></div>
+    <div id="bins">
+  <div class="bin" data-type="Plastic">
+    <img src="game/bin.png" alt="Plastic Bin">
+    <p>Plastic</p>
+  </div>
+  <div class="bin" data-type="Paper">
+    <img src="game/bin.png" alt="Paper Bin">
+    <p>Paper</p>
+  </div>
+  <div class="bin" data-type="Metal">
+    <img src="game/bin.png" alt="Metal Bin">
+    <p>Metal</p>
+  </div>
+  <div class="bin" data-type="Electronics">
+    <img src="game/bin.png" alt="Electronics Bin">
+    <p>Electronics</p>
+  </div>
+</div>
+
+<div id="game-info">
+  <div class="info-item">Score: <span id="score">0</span></div>
+  <div class="info-item">Time: <span id="timer">30</span>s</div>
+  <div class="info-item" id="feedback"></div>
+  <button id="startBtn">Start Game</button>
+</div>
+</section>
+
+
+<!-----------------------CONTACT US--------------------------------------->
+
+<section id="contact-us">
+  <h2>Contact Us</h2>
+  <p>Feel free to reach out to us by filling the form below!</p>
+  <form action="thingwiseco@gmail.com" method="post" enctype="text/plain" class="contact-form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="Name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="Email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="Phone" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="Message" rows="5" required></textarea>
+    </div>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<script>
+    // script kirim email
+    const contactForm = document.querySelector(".contact-form");
+    contactForm.addEventListener("submit", function(e){
+      e.preventDefault();
+      emailjs.sendForm("service_2w6zzk6", "template_ebiv1mu", this)
+        .then(() => {
+          alert("Message sent!");
+          this.reset(); // pesan langsung hilang
+        }, (err) => {
+          alert("Failed to send message: " + JSON.stringify(err));
+        });
+    });
+  </script>
+
+<!-----------------------FOOTER--------------------------------------->
+
+<footer id="thingwise-footer" class="thingwise-footer"> 
+    <div class="footer-top"> <div class="footer-brand"> 
+         <i class="fa-solid fa-boxes-packing"></i>
+        <h2>Thingwise</h2> </div> 
+
+        <div class="footer-links"> 
+            <div class="footer-column"> 
+                <h3>Explore</h3> 
+                <a href="#search-section">Search Things</a> 
+                <a href="#section-3">News</a> 
+
+            </div> <div class="footer-column"> 
+                <h3>Catalogue</h3> <a href="#catalogue-section-2">Our Catalogue</a> 
+                <a href="#recycle-game-section">Mini Games</a> 
+            </div> 
+            <div class="footer-column"> 
+                    <h3>Recycle Now</h3> <a href="#recycle-now">Recycle Tips</a> 
+                    <a href="#recycle-now">Do It Yourself</a> 
+
+                </div> <div class="footer-column"> 
+                   <h3>Follow us</h3>
+<div class="social-icons">
+    <a href="https://www.instagram.com/thingwiseco?igsh=MWx4OTB6NHg2cGhyMA%3D%3D&utm_source=qr" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61584837592040" target="_blank">
+        <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.tiktok.com/@thingwiseco" target="_blank">
+        <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://youtube.com/@thingwisethingwise?si=mzVBmWyUx9B1NUnD" target="_blank">
+        <i class="fab fa-youtube"></i>
+    </a>
+</div>
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+        <br>
+        <hr> 
+        <div class="footer-bottom"> 
+            <p>©2025 Thingwise. All rights reserved.</p> 
+            <div class="footer-bottom-links"> 
+                <a href="#">Privacy</a> 
+                <a href="#">Terms</a> 
+                <a href="#">Support</a> 
+            </div> 
+        </div> 
+    </footer>
+
+    <div id="tw-modalf-overlay">
+    <div class="tw-modalf-container">
+        <span class="tw-modalf-close-btn">&times;</span>
+        <h2 id="tw-modalf-header">Title</h2>
+        <div id="tw-modalf-text">Content goes here...</div>
+        <div class="tw-modalf-footer-btn">
+            <button class="tw-modalf-btn-ok">I Understand</button>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
