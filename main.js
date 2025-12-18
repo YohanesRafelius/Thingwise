@@ -533,7 +533,7 @@ function endGame() {
 let tutorials = [
   {
     title: "How To Make Piglets With Recycled Plastic Bottles",
-    video: "tutorial/tutorial1.mp4",
+    video: "tutorial1.mp4",
     materials: ["Plastic bottle", "Markers", "Scissors", "Glue", "Pen", "Colorful paper"],
     method: `1. Clean the plastic bottle thoroughly and remove the label.
 2. Cut out ears, tail, and nose from pink paper.
@@ -547,7 +547,7 @@ let tutorials = [
   },
   {
     title: "How To Make DIY Creative Minimalist Calendar From Cardboard",
-    video: "tutorial/tutorial2.mp4",
+    video: "tutorial2.mp4",
     materials: ["Cardboard", "Glue", "Scissors", "Ruler", "Paper"],
     method: "1. Decide the size of the calendar, for example each month card 10×15 cm, and base 15×15 cm. \n 2. Cut 12 cardboard pieces for month cards and 1 piece for the base. Cover all cardboard pieces with bond paper for a clean surface. \n 3. Write the month name and dates on each card. \n 4. Cut 2 cardboard strips for side rails, for example 1×15 cm each. \n 5. Attach the rails to the sides of the base, leaving a gap for the cards to slide and flip. \n 6. Insert the 12 month cards into the rails, make sure they flip smoothly. \n 7. Add decorations or highlight important dates as you like.",
     likes: 0,
@@ -555,7 +555,7 @@ let tutorials = [
   },
   {
     title: "How To Make Jar & Thread Holder from Can",
-    video: "tutorial/tutorial3.mp4",
+    video: "tutorial3.mp4",
     materials: ["Empty can", "Scraps of fabric", "Hot glue gun", "Wool yarn", "Scissors", "Beads"],
     method: `1. Clean the empty can thoroughly and remove the label.
 2. Cut a piece of scrap fabric large enough to wrap around the can.
@@ -569,7 +569,7 @@ let tutorials = [
   },
   {
     title: "Recycling Plastic Bottle Caps to Make Flower Pot Stand",
-    video: "tutorial/tutorial4.mp4",
+    video: "tutorial4.mp4",
     materials: ["Plastic gallon", "Scissors", "Colorful bottle caps", "Hot glue gun", "String", "Spray paint (pilox)"],
     method: `1. Clean the plastic gallon thoroughly and remove any labels.
 2. Cut the gallon into desired shapes to create the base or support structure.
@@ -583,7 +583,7 @@ let tutorials = [
   },
   {
     title: "How To Make Beautiful Wall Hanging Craft Using Plastic Spoons",
-    video: "tutorial/tutorial5.mp4",
+    video: "tutorial5.mp4",
     materials: ["Cardboard", "Plastic spoons", "Hot glue gun", "Colored paper", "Beads"],
     method: `1. Cut the cardboard into the desired base shape for your wall hanging.
 2. Arrange the plastic spoons in a decorative pattern on the cardboard.
@@ -597,7 +597,7 @@ let tutorials = [
   },
   {
     title: "DIY Flower Basket From Paper Cup",
-    video: "tutorial/tutorial6.mp4",
+    video: "tutorial6.mp4",
     materials: ["Paper cup", "Ruler", "Scissors", "Hot glue gun", "Ribbon"],
     method: `1. Take a paper cup and flatten it slightly to prepare for cutting.
 2. Measure and mark the sections you want to cut using a ruler.
@@ -877,4 +877,5 @@ document.getElementById("tutorialSearchInput").addEventListener("keydown", (e) =
     if (e.key === "Enter") {
         performSearch();
     }
+
 });
